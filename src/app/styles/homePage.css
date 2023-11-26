@@ -1,0 +1,634 @@
+header {
+  display: flex;
+  position: fixed;
+  top: 0%;
+  justify-content: center;
+  align-items: center;
+  height: 7vh;
+  width: 100%;
+  box-shadow: 0px 0px 15px rgba(42, 42, 42, 0.363);
+  z-index: 10;
+  background-color: rgba(111, 110, 110, 0.189);
+  color: white;
+}
+
+.pizzaNameNone{
+  display: none;
+}
+
+.mobMenu {
+  display: none;
+}
+
+.mobMenuOpen {
+  display: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+nav h2 {
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+nav h2:hover {
+  text-shadow: none;
+}
+
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  list-style-type: none;
+}
+
+nav ul li {
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+nav ul li:hover {
+  text-shadow: none;
+}
+
+.nameBtn {
+  cursor: pointer;
+}
+
+.AdminPanel-onNav:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFA500;
+  color: white;
+  height: 3vh;
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.notDrop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3vh;
+  border: none;
+  padding: 5px;
+}
+
+.notDrop:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFA500;
+  color: white;
+  height: 3vh;
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+}
+
+.dropbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFA500;
+  color: white;
+  height: 3vh;
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  color: black;
+}
+
+.openDropDownIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.2vh;
+  margin-left: -20px;
+}
+
+.NotopenDropDownIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.2vh;
+  margin-left: -20px;
+  transform: rotate(90deg);
+}
+
+.cartandCountDiv {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 40px;
+}
+
+.homePageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sliderContainer {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sliderImgs {
+  width: 100%;
+  height: 100vh;
+  box-shadow: 0px 0px 15px rgb(0, 0, 0);
+  background-position: center;
+  image-rendering: pixelated;
+}
+
+.left,
+.right {
+  width: 4rem;
+  cursor: pointer;
+  opacity: 0.2;
+  transition: all 0.3s ease;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.left {
+  cursor: pointer;
+  position: absolute;
+  left: 3%;
+  color: white;
+}
+
+.right {
+  cursor: pointer;
+  position: absolute;
+  right: 3%;
+  color: white;
+}
+
+.left:hover,
+.right:hover {
+  opacity: 1;
+}
+
+.slider-indicators {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  text-align: center;
+  font-size: 1rem;
+  justify-items: center;
+}
+
+.slider-indicators span {
+  background-color: #fff;
+  cursor: pointer;
+  opacity: 0.3;
+  transition: all 0.3s ease ease-in-out;
+  width: 12px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+.slider-indicators .active {
+  width: 12px;
+  height: 12px;
+  font-size: 1rem;
+  position: relative;
+  opacity: 1;
+}
+
+.pizzaContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 20px;
+  height: 100vh;
+}
+
+.displayPizzas {
+  width: 100%;
+}
+
+.pizzaDiv {
+  height: 44vh;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  margin-top: 10vh;
+  padding-bottom: 20px;
+}
+
+.pizzaDiv2 {
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  width: 35vh;
+  padding: 16px;
+  padding-bottom: 24px;
+  box-shadow: 0px 0px 15px rgba(29, 29, 29, 0.245);
+}
+
+.pizzaDiv2 h3 {
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+.pizzaImg {
+  height: 25vh;
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 12px;
+}
+
+.sizesQuantityDiv {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+  justify-content: space-around;
+}
+
+.sizes {
+  display: flex;
+  gap: 4px;
+  font-size: 14px;
+}
+
+.small-options {
+  font-size: 11px;
+}
+
+.quantity {
+  margin-top: 8px;
+  display: flex;
+  gap: 4px;
+}
+
+.quantity span {
+  font-size: 14px;
+}
+
+.priceBtnDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 12px;
+  gap: 20px;
+  font-size: 15px;
+}
+
+.priceBtnDiv button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #FFA500;
+  height: 4vh;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.popup-pizza {
+  display: none;
+}
+
+.active {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  border: none;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(216, 207, 197, 0.682);
+  border-radius: 12px;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  z-index: 20;
+}
+
+.popup-pizza-div {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 12px;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  background-color: white;
+}
+
+.active div h1 {
+  margin-top: 20px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.152);
+}
+
+.Popup-pizzaImg {
+  margin-top: 20px;
+  height: 50vh;
+  width: 60vh;
+  border-radius: 12px;
+}
+
+.active div p {
+  margin-top: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.152);
+}
+
+.popupClose {
+  color: white;
+  background-color: red;
+  height: 4.5vh;
+  width: 8vh;
+  border: none;
+  letter-spacing: 0.5px;
+  border-radius: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.pizza-button {
+  position: absolute;
+  background-color: #FFA500;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  bottom: 10vh;
+}
+
+.pizza-button:hover {
+  background-color: #FF8C00;
+  transform: scale(1.05);
+  letter-spacing: 0.5px;
+}
+
+.slider {
+  border: 2px solid red;
+  margin-top: 10vh;
+  height: 30vh;
+  width: 30vh;
+}
+
+@media (max-width: 768px) {
+
+  nav ul {
+    display: none;
+  }
+
+  .mobMenu {
+    display: flex;
+    font-size: 14px;
+    height: 18px;
+  }
+
+  .mobMenuOpen {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: 2px solid;
+    top: 0;
+    left: 0;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.372);
+  }
+
+  .mobMenuOpen a {
+    color: white;
+    border: 2px solid;
+    padding: 6px 10px;
+    background: rgba(3, 7, 72, 0.798);
+    margin-left: 80px;
+    width: 35%;
+  }
+
+  .X {
+    width: min-content;
+    height: min-content;
+    font-size: 40px;
+    transform: rotate(45deg);
+    background-color: unset;
+    border: none;
+    margin-left: 80px;
+    color: white;
+  }
+
+  .AdminPanel-onNav:hover {
+    background-color: #4caf4f00;
+  }
+
+  .pizzaContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 20px;
+    height: 100vh;
+  }
+
+  .pizzaDiv2 {
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    width: 35vh;
+    padding: 16px;
+    padding-bottom: 24px;
+    box-shadow: 0px 0px 15px rgba(29, 29, 29, 0.245);
+  }
+
+  .sizes {
+    gap: 5px;
+    display: flex;
+    font-size: 13px;
+  }
+
+  .quantity {
+    margin-top: 8px;
+    display: flex;
+    gap: 5px;
+    font-size: 14px;
+  }
+
+  .priceBtnDiv button {
+    border-radius: 5px;
+    letter-spacing: 0.2px;
+  }
+}
+
+@media (max-width: 544px) {
+
+  header {
+    font-size: 13px;
+  }
+
+  .pizzaContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 20px;
+    height: 100vh;
+  }
+
+  .pizzaDiv {
+    height: 44vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    margin-top: 10vh;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+  }
+
+  .NotopenDropDownIcon {
+    margin-left: -10px;
+  }
+
+  .openDropDownIcon {
+    margin-left: -10px;
+  }
+
+  .pizza-button {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+
+  .slider-indicators {
+    gap: 1.5rem;
+  }
+
+  .popup-pizza-div {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 12px;
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    background-color: white;
+    width: 80%;
+  }
+
+  .Popup-pizzaImg {
+    margin-top: 20px;
+    height: 40vh;
+    width: 100%;
+    border-radius: 12px;
+  }
+}
+
+@media (max-width: 376px) {
+
+  header {
+    font-size: 10px;
+  }
+
+  nav {
+    width: 95%;
+  }
+
+  nav ul {
+    gap: 8px;
+  }
+
+  .popup-pizza-div {
+    width: 75%;
+  }
+
+  .Popup-pizzaImg {
+    margin-top: 20px;
+    height: 40vh;
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  .slider-indicators span {
+    width: 10px;
+  }
+
+  .slider-indicators .active {
+    width: 10px;
+    height: 10px;
+  }
+
+  .sizes {
+    font-size: 13px;
+  }
+
+  .priceBtnDiv {
+    font-size: 14px;
+  }
+
+  .priceBtnDiv button {
+    border-radius: 5px;
+    letter-spacing: 0px;
+  }
+
+}

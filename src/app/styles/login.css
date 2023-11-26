@@ -1,0 +1,133 @@
+
+.LoginPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .loginBgImg {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    image-rendering: pixelated;
+  }
+  
+  .LoginDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    width: 50vh;
+    border-radius: 12px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.179);
+    z-index: 1;
+  }
+  
+  .LoginPage h2 {
+    font-size: 36px;
+    font-weight: 800;
+    padding-top: 15px;
+    letter-spacing: 2px;
+    z-index: 1;
+    color: white;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .loginInputs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20px;
+  }
+  
+  .loginInputs div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 30px;
+    gap: 20px;
+  }
+  
+  .LoginDiv input {
+    font-size: 14px;
+    height: 5vh;
+    width: 100%;
+    border-radius: 6px;
+    border: 1ps solid white;
+    background-color: rgba(29, 28, 28, 0.609);
+    padding-left: 10px;
+    color: white;
+  }
+  
+  .loginButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .LoginDiv button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8vh;
+    height: 4.5vh;
+    background-color: #FFA500;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .LoginDiv button:hover {
+    background-color: #FF8C00;
+  }
+  
+  .LoginDiv button:active {
+    background-color: #f48804;
+  }
+  
+  .LoginDiv span {
+    display: flex;
+    font-size: 13px;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  @media screen and (max-width: 380px) {
+  
+    .LoginPage h2 {
+      font-size: 30px;
+      font-weight: 600;
+      padding-top: 15px;
+      letter-spacing: 2px;
+      z-index: 1;
+    }
+  
+    .LoginDiv {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 50vh;
+      width: 100%;
+    }
+  
+    .loginInputs div {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      margin-top: 30px;
+      gap: 20px;
+    }
+  }

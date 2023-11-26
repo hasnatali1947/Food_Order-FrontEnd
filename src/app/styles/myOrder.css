@@ -1,0 +1,71 @@
+.MyOrderContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.backArrow{
+    position: absolute;
+    height: 4.5vh;
+    left: 3%;
+    top: 3.3%;
+}
+
+.MyOrderContainer h1 {
+    margin-top: 2vh;
+}
+
+.orderMainDiv {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    padding: 14px;
+    border-radius: 6px;
+    background-color: rgba(7, 188, 234, 0.829);
+    color: white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.178);
+    margin-top: 5vh;
+}
+
+.ItemDiv ul {
+    margin-top: 2vh;
+}
+
+.fullAddress {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+    gap: 7px;
+}
+
+.OrderInfo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+    gap: 7px;
+}
+
+.NoOrderDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.delivered {
+    background-color: rgb(12, 163, 12);
+    color: #FFF;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.preparing {
+    background-color: #555;
+    color: #FFF;
+    padding: 4px;
+    border-radius: 5px;
+}

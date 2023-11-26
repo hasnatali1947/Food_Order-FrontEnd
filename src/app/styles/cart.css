@@ -1,0 +1,221 @@
+
+.cartContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+  }
+  
+  .cartHeading{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 22px;
+    width: 100%;
+    margin-top: 80px;
+    color: rgba(3, 7, 72, 0.798);
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cartPizzaImage{
+    height: 12vh;
+    width: 14vh;
+    border-radius: 10px;
+  
+  }
+  
+  .cartItemsMain{
+    margin-top: 10vh;
+  }
+  
+  .cartItems{
+    border: 2px solid rgba(237, 237, 237, 0.639);
+    padding: 12px;
+    width: 60vh;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-top: 10px;
+    border-radius: 6px;
+  
+  }
+  
+  .cartImg-cross{
+    display: flex;
+    gap: 10px;
+  }
+  
+  .cartImg-cross span{
+    color: rgba(220, 13, 13, 0.874);
+    cursor: pointer;
+  }
+  
+  .addQuantityInCart{
+    cursor: pointer;
+    color: green;
+    font-weight: bold;
+    margin: 5px;
+    font-size: 20px;
+  }
+  
+  .subQuantityInCart{
+    cursor: pointer;
+    color: rgba(220, 13, 13, 0.874);
+    font-weight: bold;
+    margin: 5px;
+    font-size: 22px;
+  }
+  
+  .cartNameNdSize{
+    display: flex;
+    gap: 10px;
+  }
+  
+  .cartsCount{
+    color: green;
+    font-weight: bold;
+  }
+  
+  .SubTotal-PayNow{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+  }
+  
+  .PAY-NOW{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4.5vh;
+    width: 12vh;
+    padding: 8px;
+    color: white;
+    background-color: rgba(255, 42, 0, 0.888);
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .cartbackbtn{
+    position: absolute;
+    height: 4vh;
+    left: 5vh;
+    top: 5vh;
+  }
+  
+  .Cartquantitymain{
+    display: flex;
+  }
+  
+  .CartquantityDiv{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 2vh;
+    width: 8vh;
+    margin-left: 1vh;
+  }
+  
+  .subQuantity{
+    color: red;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  .addQuantity{
+    color: green;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  .cartPrices{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .cartDustban{
+    height: 2vh;
+    cursor: pointer;
+  }
+  
+  .loading{
+    position: absolute;
+    border: none;
+    padding: 7px;
+    background-color: rgba(84, 250, 13, 0.861);
+    word-spacing: 0.4px;
+    margin-top: 2vh;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .PaymentSuccess p{
+    position: absolute;
+    border: none;
+    padding: 7px;
+    background-color: rgba(84, 250, 13, 0.861);
+    word-spacing: 0.4px;
+    margin-top: 2vh;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 426px){
+    .cartHeading{
+      display: flex;
+      align-items: top;
+      font-size: 17px;
+      padding-bottom: 20px;
+    }
+
+    .cartItems {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      border: 2px solid rgba(237, 237, 237, 0.639);
+      padding: 12px;
+      width: 90%;
+      gap: 50px;
+      list-style-type: none;
+      margin-top: 10px;
+      border-radius: 6px;
+  }
+  }
+
+  @media (max-width: 321px){
+    .cartbackbtn {
+      position: absolute;
+      height: 3vh;
+      left: 3vh;
+      top: 4vh;
+  }
+
+  .cartPizzaImage {
+    height: 12vh;
+    width: 13vh;
+    border-radius: 10px;
+}
+    
+    .cartHeading{
+      display: flex;
+      font-size: 14px;
+      padding-bottom: 1px;
+    }
+
+    .cartItems {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      border: 2px solid rgba(237, 237, 237, 0.639);
+      padding: 12px;
+      width: 90%;
+      gap: 15px;
+      list-style-type: none;
+      margin-top: 10px;
+      border-radius: 6px;
+  }
+  }

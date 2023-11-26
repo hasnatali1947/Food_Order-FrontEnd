@@ -1,0 +1,201 @@
+@media screen and (max-width: 380px) {
+
+  .RegisterPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .RegisterPage h2 {
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 15px;
+    letter-spacing: 2px;
+    z-index: 1;
+    color: white;
+  }
+
+  .registerDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-radius: 12px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.179);
+    z-index: 1;
+  }
+
+  .registerInputs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20px;
+  }
+
+  .registerInputs div {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 30px;
+    gap: 20px;
+  }
+
+  .registerInputs input {
+    font-size: 14px;
+    height: 5vh;
+    width: 100%;
+    border-radius: 6px;
+    background-color: rgba(29, 28, 28, 0.609);
+    padding-left: 10px;
+    color: white;
+  }
+
+  .registerButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .registerButtons button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    height: 4.5vh;
+    background-color: #FFA500;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+
+  .registerButtons button:hover {
+    background-color: #FF8C00;
+  }
+
+  .registerButtons button:active {
+    background-color: #f38703;
+  }
+
+  .registerButtons span {
+    display: flex;
+    font-size: 13px;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  ;
+
+}
+
+@media (min-width: 381px) {
+
+
+  .RegisterPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .registerDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    width: 50vh;
+    border-radius: 12px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.179);
+    z-index: 1;
+  }
+
+  .RegisterPage h2 {
+    font-size: 36px;
+    font-weight: 800;
+    padding-top: 15px;
+    letter-spacing: 2px;
+    z-index: 1;
+    color: white;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  .registerInputs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20px;
+  }
+
+  .registerInputs div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 30px;
+    gap: 20px;
+  }
+
+  .registerInputs input {
+    font-size: 14px;
+    height: 5vh;
+    width: 100%;
+    border-radius: 6px;
+    background-color: rgba(29, 28, 28, 0.609);
+    padding-left: 10px;
+    color: white;
+  }
+
+  .registerButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .registerButtons button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    height: 4.5vh;
+    background-color: #FFA500;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+
+  .registerButtons button:hover {
+    background-color: #FF8C00;
+  }
+
+  .registerButtons button:active {
+    background-color: #f38703;
+  }
+
+  .registerButtons span {
+    display: flex;
+    font-size: 13px;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  ;
+}
